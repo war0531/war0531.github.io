@@ -1,0 +1,93 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #edc8ff;
+    background-image: url(https://www.chromethemer.com/download/hd-wallpapers/genshin-impact-7680x4320.jpg);
+    background-size: cover;
+}
+
+.annivcard{
+    position: relative;
+    width: 250px;
+    height: 350px;
+    cursor: pointer;
+    transform-style: preserve-3d;
+    transform: perspective(2500px);
+    transform: 1s;
+}
+
+.annivcard:hover{
+    transform: perspective(2500px) rotate(5deg);
+    box-shadow: inset 100px 20px 100px rgba(0, 0, 0, 0.2), 0 10px 100px rgba(0, 0, 0, 0.5);
+}
+
+.annivcard:hover .cardfront{
+    transform: rotateY(-160deg);
+}
+
+.annivcard:hover .happy{
+    visibility: hidden;
+}
+
+.cardfront{
+    position: relative;
+    background-color: #fff;
+    width: 250px;
+    height: 350px;
+    overflow: hidden;
+    transform-origin: left;
+    box-shadow: inset 100px 20px 100px rgba(0, 0, 0, 0.2), 30px 0 50px rgba(0, 0, 0, 0.4);
+    transition: 0.6s;
+}
+
+.hart{
+    width: 250px;
+    height: 270px;
+}
+
+.happy{
+    font-family: sans-serif;
+    text-align: center;
+    margin: 30px;
+    background-color: #edc8ff;
+    transition: 0.1s;
+}
+
+.decorations{
+    position: absolute;
+}
+
+.cardinside{
+    position: absolute;
+    background-color: #ffffff;
+    width: 250px;
+    height: 350px;
+    z-index: -1;
+    left: 0;
+    top: 0;
+    box-shadow: inset 100px 20px 100px rgba(0, 0, 0, 0.2);
+}
+
+.p{
+    font-family: "Bush Script MT";
+    margin: 40px;
+    color: #333;
+}
+
+.name{
+    position: absolute;
+    left: 150px;
+    top: 300px;
+    color: #333;
+}
+
+.back{
+    font-family: sans-serif;
+    color: #333;
+    text-align: center;
+    margin: 30px;
+    outline-color: #333;
+    outline-style: dotted;
+}
